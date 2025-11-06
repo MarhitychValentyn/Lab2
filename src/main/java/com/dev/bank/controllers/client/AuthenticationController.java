@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public interface AuthenticationController {
     @PostMapping("/login") //POST http://localhost:8080/auth/login
     AuthLoginResponse login(@RequestBody AuthLoginRequest request);
+
     @PostMapping("/register") //POST http://localhost:8080/auth/register
     AuthRegisterResponse register(@RequestBody AuthRegisterRequest request);
 }

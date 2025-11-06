@@ -3,9 +3,9 @@ package com.dev.bank.models.request;
 public class AuthRegisterRequest {
     private String username;
     private String password;
-    private String firstName;
-    private String lastName;
     private String phoneNumber;
+    private String email;
+    private String birthday;
 
     public void setUsername(String username) {
         this.username = username;
@@ -23,22 +23,6 @@ public class AuthRegisterRequest {
         return password;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
@@ -46,4 +30,12 @@ public class AuthRegisterRequest {
     public String getPhoneNumber() {
         return phoneNumber;
     }
+
+    public void setEmail(String email) { this.email = email; }
+
+    public String getEmail() { return email; }
+
+    public void setBirthday(String birthday) { this.birthday = birthday; }
+
+    public String getBirthday() { return birthday; }
 }
